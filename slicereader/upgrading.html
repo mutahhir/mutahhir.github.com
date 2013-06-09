@@ -30,21 +30,30 @@
         <div class="pure-g-r offsetleft">
             <div class="pure-u-1 l-centered">
                 <header id="header" class="banner">
-                    <h1 class="name">Slicereader</h1>
+                    <h1 class="name"><a href="http://mthr.me/slicereader">Slicereader</a></h1>
                 </header><!-- /header -->
             </div>
 
-            <div class="pure-u-1 l-centered">
-                <p><a href="#" class="pure-button">Download Slicereader</a> <span class="small-notice">&mdash;<a href="upgrading.html" target="_blank">Notice for people upgrading</a></span></p> 
-            </div>
-            
-            <div class="pure-u-1 l-centered">
-                <img class="intro-window" src="img/intro-window-with-icon.png" alt="Intro to Slicereader">
-            </div>
-            
-            <div class="pure-u-1 l-centered">
-                <a href="https://twitter.com/slicereader" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @slicereader</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <div class="pure-u-1">
+                <h3>Notice for people upgrading Slicereader</h3>
+                <p>I'm sorry, but this update won't contain your existing reading list. <br />
+                    It's my fault for not checking this before, but I realized that the articles were being under the wrong name <em>after</em> the initial launch. Actually, that release was pretty sloppy because it wasn't a release at all. I didn't expect anyone to use it. Anyhow, the point remains &hellip;</p> 
+                <blockquote>I'm sorry!</blockquote>
+                <p>However, there is a <strong>fix</strong>, and it's not hard. You can get your reading list back, just like it was before. I'm going to try and detail the steps as straightforwardly as I can, but in case you have any problems, contact me on <a href="http://twitter.com/slicereader">twitter</a> or send me an <a href="mailto:mutahhir@mthr.me">email</a></p>
+
+                <p>Ok, so here we go</p>
+                <ul>
+                    <li>
+                        <p>In your mac there's a folder with the path <pre>~/Library/Application Support/jamfilled.Brake</pre> navigate to that.</p><p>If you don't know how to do that, it's easy: Select the finder icon on your dock (the left most one). Then, either press Shift-Command-G or use the main menu Go > Go to Folder&hellip;</p><p>Copy and paste <pre>~/Library/Application Support/jamfilled.Brake</pre> there.</p>
+                        </li>
+                    <li>You will see a file called <pre>Brake.storedata</pre>. Copy that file (Cmd-C, or right-click > Copy).</li>
+                    <li>Run the <em>new, updated</em> Slicereader once. If you haven't downloaded it, do it now.</li>
+                    <li>Using the same method explained in Step 1, go to <pre>~/Library/Application Support/me.mthr.slicereader</pre></li>
+                    <li>Paste the <pre>Brake.storedata</pre> file here</li>
+                    <li>There will be a file in this directory already called <pre>slicereader.storedata</pre>. Delete that file.</li>
+                    <li>Now rename <pre>Brake.storedata</pre> to <pre>slicereader.storedata</pre> and you're done</li>
+                    <li>Re-open slicereader. Viola! (Hopefully :))</li>
+                </ul>
             </div>
         </div>
 

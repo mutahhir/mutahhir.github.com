@@ -1,0 +1,46 @@
+.l-centered {
+	text-align: center;
+}
+
+.banner {
+	margin: 10px;
+}
+
+.name {
+	background-color: #78A3D1;
+}
+
+.slicereader-icon {
+	width: 128px;
+	height: 128px;
+	display: block;
+	float: left;
+	margin-top: -5px;
+}
+
+.display {
+	width: 100%;
+}
+.content {
+	width: 960px;
+	height: 640px;
+}
+
+.small-notice {
+	font-size: 0.75em;
+	font-style: italic;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+blockquote {
+	font-size: 1.25rem;
+	font-style: italic;
+}
+
+pre {
+	display: inline;
+	color: #78A3D1;
+}
