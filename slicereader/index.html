@@ -26,6 +26,14 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
         <div class="pure-g-r offsetleft">
             <div class="pure-u-1 l-centered">
@@ -48,15 +56,27 @@
             <div class="pure-u-1">
                 <div class="padded">
                     <h2>So what does it do?</h2>
-                    <p>Ever wanted to read something and found yourself skipping ahead or getting distracted and trying to remember where you were at? Well, I have this problem a lot! I also read a lot. So? I made an app that broke text into paragraphs and displayed each in a large beautiful font on top of a clean page.</p>
-                    <p>Slicereader remembers which paragraph you were reading for each and every article. So resuming where you left off requires no effort. Just click on the article within the Reading List and Slicereader resumes from where you stopped.</p>
-                    <p>Read <a href="https://medium.com/look-what-i-made/9c89fdca8ba1">this</a> article where I explain my reasons for making Slicereader and why it is the way it is</p>
                 </div>
             </div>
 
-            <div class="pure-u-1 l-centered">
-                <p><a href="https://s3.amazonaws.com/slicereader/Slicereader.zip" class="pure-button">Download Slicereader</a></p> 
-                <p class="sysreq">For Intel Macs running OS X 10.8+ (Mountain Lion)</p>
+            <div class="pure-u-1-2">
+                <div class="padded">
+                    <p>Ever wanted to read something and found yourself skipping ahead or getting distracted and trying to remember where you were at? Well, I have this problem a lot! I also read a lot. So? I made an app that broke text into paragraphs and displayed each in a large beautiful font on top of a clean page.</p>
+                    <p>Slicereader remembers which paragraph you were reading for each and every article. So resuming where you left off requires no effort. Just click on the article within the Reading List and Slicereader resumes from where you stopped.</p>
+                    <p>Read <a href="https://medium.com/look-what-i-made/9c89fdca8ba1">this</a> article where I explain my reasons for making Slicereader and why it is the way it is.</p>
+                </div>
+            </div>
+
+            <div class="pure-u-1-2 l-centered">
+                <div class="padded">
+                    <p><a href="https://s3.amazonaws.com/slicereader/Slicereader.zip" class="pure-button">Download Slicereader</a></p> 
+                    <p class="sysreq">For Intel Macs running OS X 10.8+ (Mountain Lion)</p>
+                    <p><a href="https://twitter.com/slicereader" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @slicereader</a></p>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    <p><a href="https://twitter.com/share" class="twitter-share-button" data-via="slicereader" data-size="large">Tweet</a></p>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    <div class="fb-like" data-href="http://mthr.me/slicereader" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="lucida grande" data-action="recommend"></div>
+                </div>
             </div>
 
             <div class="pure-u-1">
@@ -90,11 +110,6 @@
                 <p><a href="https://s3.amazonaws.com/slicereader/Slicereader.zip" class="pure-button">Download Slicereader</a></p> 
                 <p class="sysreq">For Intel Macs running OS X 10.8+ (Mountain Lion)</p>
             </div>
-            
-            <div class="pure-u-1 l-centered">
-                <a href="https://twitter.com/slicereader" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @slicereader</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-            </div>
         </div>
 
         <div class="footer-container">
@@ -103,8 +118,6 @@
                 &mdash; <a href="https://s3.amazonaws.com/slicereader/Slicereader+Presspack.zip">Press pack</a>
             </footer>
         </div>
-
-        <script src="js/main.js"></script>
 
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
