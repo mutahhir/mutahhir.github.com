@@ -71,14 +71,11 @@ h3 {
 	margin-top: 100px;
 	padding-left: 10px;
 	padding-top: 10px;
-	width: 100%;
-	border-top: 1px solid #ccc;
+	width: 90%;
 }
 .footer {
 	text-align: center;
 	font-style: italic;
-	padding: 10px;
-
 }
 
 .separator {
