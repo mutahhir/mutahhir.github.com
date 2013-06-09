@@ -1,5 +1,12 @@
+.name {
+	color: #78A3D1;
+}
+
 .slicereader-icon {
 	width: 128px;
 	height: 128px;
-	display: inline;
+	display: block;
+	float: left;
+	margin-top: -5px;
 }
+
