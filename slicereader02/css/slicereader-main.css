@@ -72,3 +72,7 @@ p {
 .featureimage {
 	max-width: 75% !important;
 }
+
+a.appdownload:hover {
+	background: transparent !important;
+}
