@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Notes for upgrading Slicereader</title>
+        <meta name="description" content="Mac app for making reading long texts easy">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../css/normalize.min.css">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.1.0/pure-min.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="css/slicereader-main.css">
+
+        <!-- Fonts by google -->
+        <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+
+        <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <!--<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="pure-g-r offsetleft">
+            <div class="pure-u-1 l-centered">
+                <header id="header" class="banner">
+                    <h1 class="name"><a href="http://mthr.me/slicereader">Slicereader</a></h1>
+                </header><!-- /header -->
+            </div>
+
+            <div class="pure-u-1">
+                <h3>Notice for people upgrading Slicereader</h3>
+                <p>I'm sorry, but this update will empty your existing reading list. <br />
+                    It's my fault for not checking this before, but I realized that the articles were being under the wrong name <em>after</em> the initial launch. Actually, that release was pretty sloppy because it wasn't a release at all. I didn't expect anyone to use it. Anyhow, the point remains &hellip;</p> 
+                <blockquote>I'm sorry!</blockquote>
+                <p>However, there is a <strong>fix</strong>, and it's not hard. You can get your reading list back, just like it was before. I'm going to try and detail the steps as straightforwardly as I can, but in case you have any problems, contact me on <a href="http://twitter.com/slicereader">twitter</a> or send me an <a href="mailto:mutahhir@mthr.me">email</a></p>
+
+                <p>Ok, so here we go</p>
+                <ul>
+                    <li>
+                        <p>In your mac there's a folder with the path <pre>~/Library/Application Support/jamfilled.Brake</pre> navigate to that.</p><p>If you don't know how to do that, it's easy: Select the finder icon on your dock (the left most one). Then, either press Shift-Command-G or use the main menu Go > Go to Folder&hellip;</p><p>Copy and paste <pre>~/Library/Application Support/jamfilled.Brake</pre> there.</p>
+                        </li>
+                    <li>You will see a file called <pre>Brake.storedata</pre>. Copy that file (Cmd-C, or right-click > Copy).</li>
+                    <li>Run the <em>new, updated</em> Slicereader once. If you haven't downloaded it, do it now.</li>
+                    <li>Using the same method explained in Step 1, go to <pre>~/Library/Application Support/me.mthr.slicereader</pre></li>
+                    <li>Paste the <pre>Brake.storedata</pre> file here</li>
+                    <li>There will be a file in this directory already called <pre>slicereader.storedata</pre>. Delete that file.</li>
+                    <li>Now rename <pre>Brake.storedata</pre> to <pre>slicereader.storedata</pre> and you're done</li>
+                    <li>Re-open slicereader. Viola! (Hopefully :))</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                Made with love by <a href="http://mthr.me">Mutahhir Ali Hayat.</a> Thanks for visiting!
+            </footer>
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-41589448-1', 'mthr.me');
+          ga('send', 'pageview');
+        </script>
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-41589448-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+    </body>
+</html>
